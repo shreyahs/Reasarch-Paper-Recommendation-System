@@ -1,0 +1,61 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<style>
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
+}
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+</style>
+</br>
+<div class="container">
+    
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <form method="post" action = "hello">
+				<div class="form-group">
+        			<label for="validate-text">User ID</label>
+					<div class="input-group">
+						<input type="text" class="form-control" id="userId" name= "nm" aria-describedby="userIdHelp" placeholder="Enter SJSU ID">
+<span class="input-group-btn">
+        <button class="btn btn-success" type="submit">Go!</button>
+   </span>					</div>
+				</div>
+				</form>
+				<form  action = "search"  method="post">
+				<div  class="form-group">
+        			<label for="validate-optional">Search</label>
+					<div class="input-group">
+					<input type="SearchQuery" class="form-control" id="SearchQuery" placeholder="Enter your Search" name="submit">
+					<span class="input-group-btn">
+        <button class="btn btn-success" type="submit">Go!</button>
+   </span>
+					</div>
+				</div>
+    		    </form>
+        </div>
+    </div>
+</div>
